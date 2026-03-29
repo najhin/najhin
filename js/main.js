@@ -154,7 +154,7 @@ const LESSONS = [
     description: 'مدخل إلى الأعداد العقدية: الشكل الجبري، الشكل المثلثي، وتطبيقات في الهندسة.',
     level: '2bac',
     levelLabel: 'ثانية باك',
-    youtubeId: 'VIDEO_ID_11',
+    youtubeId: 'er3iuYzE3q8',
     pdfPath: 'assets/pdfs/2bac/complex.pdf',
     topics: ['الشكل الجبري', 'الشكل المثلثي', 'الشكل الأسي']
   },
@@ -166,7 +166,7 @@ const LESSONS = [
     description: 'دراسة متقدمة للمتتاليات مع مدخل إلى المنطق الرياضي: التقاربية، البرهان بالتحريض.',
     level: '2bac',
     levelLabel: 'ثانية باك',
-    youtubeId: 'VIDEO_ID_12',
+    youtubeId: 'er3iuYzE3q8',
     pdfPath: 'assets/pdfs/2bac/sequences-logic.pdf',
     topics: ['تقارب المتتاليات', 'البرهان بالاستدلال', 'التحريض الرياضي']
   }
@@ -179,7 +179,7 @@ const LESSONS = [
     description: 'calcule integrale d une fonction continue sur un segment.',
     level: '2bac',
     levelLabel: 'ثانية باك',
-    youtubeId: 'VIDEO_ID_14',
+    youtubeId: 'er3iuYzE3q8',
     pdfPath: 'assets/pdfs/2bac/inequations.pdf',
     topics: ['fonction', 'primitive dune fonction', 'calcule integrale']
   }
