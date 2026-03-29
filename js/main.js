@@ -472,7 +472,7 @@ function renderLessonContent(lesson) {
       videoContainer.innerHTML = `
         <div class="video-wrapper">
           <iframe
-            src="https://www.youtube.com/embed/${lesson.youtubeId}?rel=0"
+            src="https://www.youtube.com/watch?v=${lesson.youtubeId}?rel=0"
             title="${lesson.title}"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
