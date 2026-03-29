@@ -134,55 +134,103 @@ const LESSONS = [
     pdfPath: 'assets/pdfs/2bac/logarithms.pdf',
     topics: ['خواص ln', 'اشتقاق ln', 'حل المعادلات']
   },
-  {
-    id: 10,
-    slug: 'exponential',
-    title: 'الدوال الأسية',
-    titleFr: 'Fonctions Exponentielles',
-    description: 'الدالة الأسية وخواصها: العلاقة مع اللوغاريتم، الاشتقاق، والتطبيقات.',
-    level: '2bac',
-    levelLabel: 'ثانية باك',
-    youtubeId: 'https://youtu.be/er3iuYzE3q8?si=9hrJXcNaecELLOCm',
-    pdfPath: 'https://drive.google.com/file/d/1mJI0PI6sQWVIx5ib-j3tmNfVZlt4UQa3/view?usp=sharing',
-    topics: ['الدالة e^x', 'خواص الأس', 'معادلات أسية']
-  },
-  {
-    id: 11,
-    slug: 'complex',
-    title: 'الأعداد العقدية',
-    titleFr: 'Nombres Complexes',
-    description: 'مدخل إلى الأعداد العقدية: الشكل الجبري، الشكل المثلثي، وتطبيقات في الهندسة.',
-    level: '2bac',
-    levelLabel: 'ثانية باك',
-    youtubeId: 'er3iuYzE3q8',
-    pdfPath: 'assets/pdfs/2bac/complex.pdf',
-    topics: ['الشكل الجبري', 'الشكل المثلثي', 'الشكل الأسي']
-  },
-  {
-    id: 12,
-    slug: 'sequences-logic',
-    title: 'المتتاليات والمنطق',
-    titleFr: 'Suites et Logique',
-    description: 'دراسة متقدمة للمتتاليات مع مدخل إلى المنطق الرياضي: التقاربية، البرهان بالتحريض.',
-    level: '2bac',
-    levelLabel: 'ثانية باك',
-    youtubeId: 'er3iuYzE3q8',
-    pdfPath: 'assets/pdfs/2bac/sequences-logic.pdf',
-    topics: ['تقارب المتتاليات', 'البرهان بالاستدلال', 'التحريض الرياضي']
-  }
-,
+
    {
-    id: 13,
-    slug: 'integrale',
-    title: 'calcule integrale',
-    titleFr: 'calcule integrale',
-    description: 'calcule integrale d une fonction continue sur un segment.',
-    level: '2bac',
-    levelLabel: 'ثانية باك',
-    youtubeId: 'er3iuYzE3q8',
-    pdfPath: 'assets/pdfs/2bac/inequations.pdf',
-    topics: ['fonction', 'primitive dune fonction', 'calcule integrale']
-  }
+  id: 10,
+  slug: 'exponential',
+  title: 'الدوال الأسية',
+  titleFr: 'Fonctions Exponentielles',
+  description: 'Étude de la fonction exponentielle : propriétés, dérivation, croissance et résolution d’équations exponentielles.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: 'k6U-i4gXkLM',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Exponentielle.pdf',
+  topics: ['الدالة e^x', 'خواص الأس', 'حل المعادلات الأسية']
+},
+{
+  id: 11,
+  slug: 'complex',
+  title: 'الأعداد العقدية',
+  titleFr: 'Nombres Complexes',
+  description: 'Introduction aux nombres complexes : forme algébrique, trigonométrique et exponentielle, avec applications géométriques.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: 'NybHckSEQBI',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Complexes.pdf',
+  topics: ['الشكل الجبري', 'الشكل المثلثي', 'الشكل الأسي']
+},
+{
+  id: 12,
+  slug: 'sequences-logic',
+  title: 'المتتاليات والمنطق',
+  titleFr: 'Suites et Logique',
+  description: 'Étude des suites numériques et introduction à la logique mathématique : convergence et raisonnement par récurrence.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: 'y8lWcZq0w6Q',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Suites.pdf',
+  topics: ['تقارب المتتاليات', 'البرهان بالتحريض', 'المنطق الرياضي']
+},
+{
+  id: 13,
+  slug: 'integrale',
+  title: 'التكامل',
+  titleFr: 'Calcul Intégral',
+  description: 'Calcul de l’intégrale d’une fonction continue, primitives et applications au calcul d’aires.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: 'rfG8ce4nNh0',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Integrales.pdf',
+  topics: ['النهايات', 'الدوال الأصلية', 'حساب المساحات']
+},
+{
+  id: 14,
+  slug: 'equations-differentielles',
+  title: 'المعادلات التفاضلية',
+  titleFr: 'Équations différentielles',
+  description: 'Résolution des équations différentielles du premier ordre et applications.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: '7w8Y7F6kFZk',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/EquaDiff.pdf',
+  topics: ['معادلات تفاضلية', 'الحل العام', 'تطبيقات']
+},
+{
+  id: 15,
+  slug: 'denombrement',
+  title: 'التعداد',
+  titleFr: 'Dénombrement',
+  description: 'Techniques de comptage : arrangements, combinaisons et principes fondamentaux.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: 'WUvTyaaNkzM',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Denombrement.pdf',
+  topics: ['التبديلات', 'التوافيق', 'مبادئ العد']
+},
+{
+  id: 16,
+  slug: 'probabilites',
+  title: 'الاحتمالات',
+  titleFr: 'Probabilités',
+  description: 'Calcul des probabilités, événements aléatoires et lois de probabilité.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: 'xXeS3QdQ8s0',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Probabilites.pdf',
+  topics: ['الأحداث', 'الاحتمال', 'القوانين']
+},
+{
+  id: 17,
+  slug: 'geometrie-espace',
+  title: 'الهندسة في الفضاء',
+  titleFr: 'Géométrie dans l’espace',
+  description: 'Étude des droites, plans et solides dans l’espace avec des applications géométriques.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: 'tXlXG9pYwK8',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Espace.pdf',
+  topics: ['المستقيمات', 'المستويات', 'المجسمات']
+}
 ];
 
 /* ==========================================
