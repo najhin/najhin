@@ -143,7 +143,7 @@ const LESSONS = [
     level: '2bac',
     levelLabel: 'ثانية باك',
     youtubeId: 'VIDEO_ID_10',
-    pdfPath: 'assets/pdfs/2bac/exponential.pdf',
+    pdfPath: 'https://drive.google.com/file/d/1mJI0PI6sQWVIx5ib-j3tmNfVZlt4UQa3/view?usp=sharing',
     topics: ['الدالة e^x', 'خواص الأس', 'معادلات أسية']
   },
   {
