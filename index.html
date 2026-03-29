@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Najhin - نجحين | تعلم الرياضيات بسهولة</title>
+  <meta name="description" content="نجحين - منصة تعليمية مجانية لتعلم الرياضيات للطلاب المغاربة في مستويات الجذع المشترك، أولى باك، وثانية باك." />
+  <meta name="keywords" content="رياضيات, باكالوريا, جذع مشترك, نجحين, دروس مجانية, المغرب" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Najhin - نجحين" />
+  <meta property="og:description" content="منصة تعليمية مجانية للرياضيات - الطلاب المغاربة" />
+  <meta property="og:type" content="website" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-home">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <span>Najhin نجحين</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">الرئيسية</a>
+        <a href="tronc.html">جذع مشترك</a>
+        <a href="1bac.html">أولى باك</a>
+        <a href="2bac.html">ثانية باك</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" aria-label="تغيير الوضع">
+          <i class="fas fa-moon theme-icon"></i>
+        </button>
+        <button class="btn-menu" aria-label="القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+      <a href="tronc.html"><i class="fas fa-book"></i> جذع مشترك</a>
+      <a href="1bac.html"><i class="fas fa-book-open"></i> أولى باك</a>
+      <a href="2bac.html"><i class="fas fa-star"></i> ثانية باك</a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star" style="margin-left:0.4rem"></i>
+        منصة تعليمية مجانية 100%
+      </div>
+      <h1>
+        <span>Najhin</span> نجحين<br />
+       تعلم الرياضيات بسهولة
+      </h1>
+      <p class="hero-subtitle">
+        دروس شاملة في الرياضيات للطلاب المغاربة — جذع مشترك، أولى باك، ثانية باك.
+        فيديوهات تعليمية ودروس PDF مجانية.
+      </p>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="ابحث عن درس... (مثلاً: الاشتقاق، النهايات)"
+            aria-label="بحث في الدروس"
+          />
+          <button class="search-btn" aria-label="بحث">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="search-results" role="listbox"></div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="tronc.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-play"></i> ابدأ التعلم
+        </a>
+        <a href="#levels" class="btn btn-outline btn-lg">
+          <i class="fas fa-layer-group"></i> استكشف المستويات
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="stat-number" data-count="3" data-suffix="">3</div>
+          <div class="stat-label">مستويات دراسية</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-book-open"></i></div>
+          <div class="stat-number" data-count="24" data-suffix="+">24+</div>
+          <div class="stat-label">درس متاح</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-heart"></i></div>
+          <div class="stat-number" data-count="100" data-suffix="%">100%</div>
+          <div class="stat-label">مجاني تماماً</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LEVELS ==================== -->
+  <section class="section section-alt" id="levels">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="fas fa-layer-group" style="margin-left:0.35rem"></i>المستويات الدراسية</div>
+        <h2>اختر مستواك الدراسي</h2>
+        <p>دروس منظمة ومفصلة لكل مستوى دراسي بأسلوب بسيط وواضح</p>
+      </div>
+
+      <div class="levels-grid">
+        <!-- Tronc Commun -->
+        <a href="tronc.html" class="level-card" style="--card-color:#10b981;--card-bg:rgba(16,185,129,0.1)">
+          <div class="level-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>الجذع المشترك</h3>
+          <p>أسس الرياضيات: المتراجحات، الدوال، الهندسة والحساب العددي</p>
+          <div class="level-meta">
+            <span class="badge">4 دروس</span>
+            <span class="badge">مستوى مبتدئ</span>
+          </div>
+          <span class="btn btn-outline-primary btn-sm" style="--primary:#10b981">
+            <i class="fas fa-arrow-left"></i> استعراض الدروس
+          </span>
+        </a>
+
+        <!-- 1ère Bac -->
+        <a href="1bac.html" class="level-card" style="--card-color:#2563eb;--card-bg:rgba(37,99,235,0.1)">
+          <div class="level-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>أولى باك</h3>
+          <p>الاشتقاق، النهايات، المتتاليات والاحتمالات بشرح مفصل</p>
+          <div class="level-meta">
+            <span class="badge">4 دروس</span>
+            <span class="badge">مستوى متوسط</span>
+          </div>
+          <span class="btn btn-outline-primary btn-sm">
+            <i class="fas fa-arrow-left"></i> استعراض الدروس
+          </span>
+        </a>
+
+        <!-- 2ème Bac -->
+        <a href="2bac.html" class="level-card" style="--card-color:#7c3aed;--card-bg:rgba(139,92,246,0.1)">
+          <div class="level-icon">
+            <i class="fas fa-infinity"></i>
+          </div>
+          <h3>ثانية باك</h3>
+          <p>الدوال اللوغاريتمية، الأسية، الأعداد العقدية والمنطق الرياضي</p>
+          <div class="level-meta">
+            <span class="badge">4 دروس</span>
+            <span class="badge">مستوى متقدم</span>
+          </div>
+          <span class="btn btn-outline-primary btn-sm" style="--primary:#7c3aed">
+            <i class="fas fa-arrow-left"></i> استعراض الدروس
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LATEST LESSONS ==================== -->
+  <section class="section" id="latest">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="fas fa-fire" style="margin-left:0.35rem"></i>أحدث الدروس</div>
+        <h2>الدروس المتاحة</h2>
+        <p>مجموعة منتقاة من الدروس لتبدأ رحلتك التعليمية</p>
+      </div>
+
+      <div class="lessons-grid" id="latest-lessons">
+        <div class="spinner"></div>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="tronc.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-th-large"></i> عرض جميع الدروس
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>ابدأ رحلتك نحو النجاح اليوم</h2>
+      <p>آلاف الطلاب المغاربة يثقون في Najhin لتحضير امتحاناتهم</p>
+      <div class="cta-group">
+        <a href="tronc.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-play-circle"></i> ابدأ الآن مجاناً
+        </a>
+        <a href="2bac.html" class="btn btn-outline btn-lg">
+          <i class="fas fa-star"></i> ثانية باك
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+          <span>Najhin نجحين</span>
+        </a>
+        <p style="margin-top:1rem">منصة تعليمية مجانية مخصصة للطلاب المغاربة لتعلم الرياضيات بأسلوب بسيط وفعّال.</p>
+      </div>
+      <div class="footer-col">
+        <h4>المستويات</h4>
+        <ul>
+          <li><a href="tronc.html">الجذع المشترك</a></li>
+          <li><a href="1bac.html">أولى باكالوريا</a></li>
+          <li><a href="2bac.html">ثانية باكالوريا</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>الدروس</h4>
+        <ul>
+          <li><a href="lesson.html?slug=derivation">الاشتقاق</a></li>
+          <li><a href="lesson.html?slug=limits">النهايات</a></li>
+          <li><a href="lesson.html?slug=logarithms">الدوال اللوغاريتمية</a></li>
+          <li><a href="lesson.html?slug=complex">الأعداد العقدية</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>روابط</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="#levels">المستويات</a></li>
+          <li><a href="#latest">أحدث الدروس</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" style="max-width:1200px;margin:0 auto">
+      <p>© 2024 Najhin نجحين — جميع الحقوق محفوظة</p>
+      <div class="footer-social">
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="العودة للأعلى">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
