@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://najhin.ma/</loc>
+  </url>
+
+  <!-- Lessons -->
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=logarithms</loc>
+  </url>
+
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=exponential</loc>
+  </url>
+
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=complex</loc>
+  </url>
+
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=sequences-logic</loc>
+  </url>
+
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=integrale</loc>
+  </url>
+
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=equations-differentielles</loc>
+  </url>
+
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=denombrement</loc>
+  </url>
+
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=probabilites</loc>
+  </url>
+
+  <url>
+    <loc>https://najhin.ma/lesson.html?slug=geometrie-espace</loc>
+  </url>
+
+</urlset>
