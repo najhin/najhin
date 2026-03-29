@@ -142,7 +142,7 @@ const LESSONS = [
     description: 'الدالة الأسية وخواصها: العلاقة مع اللوغاريتم، الاشتقاق، والتطبيقات.',
     level: '2bac',
     levelLabel: 'ثانية باك',
-    youtubeId: 'VIDEO_ID_10',
+    youtubeId: 'https://youtu.be/er3iuYzE3q8?si=9hrJXcNaecELLOCm',
     pdfPath: 'https://drive.google.com/file/d/1mJI0PI6sQWVIx5ib-j3tmNfVZlt4UQa3/view?usp=sharing',
     topics: ['الدالة e^x', 'خواص الأس', 'معادلات أسية']
   },
