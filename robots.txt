@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:
+
+# Allow important assets
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+# Sitemap (add later if you create it)
+Sitemap: https://najhin.ma/sitemap.xml
