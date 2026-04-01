@@ -617,3 +617,140 @@ document.addEventListener('DOMContentLoaded', () => {
   if (body.classList.contains('page-2bac')) initLevelPage('2bac');
   if (body.classList.contains('page-lesson')) initLessonPage();
 });
+
+
+
+
+
+
+/* ==========================================
+   RENDER EXERCISES - ADD THIS FUNCTION
+   ========================================== */
+
+function renderExercises(lessonSlug) {
+  const container = document.getElementById('exercises-container');
+  if (!container) return;
+  
+  // Get exercises from the global window.EXERCISES object
+  const exercises = window.EXERCISES ? window.EXERCISES[lessonSlug] : null;
+  
+  if (!exercises || exercises.length === 0) {
+    container.innerHTML = `
+      <div style="padding: 2rem; text-align: center;">
+        <i class="fas fa-dumbbell" style="font-size: 2rem; color: var(--text-muted);"></i>
+        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">لا توجد تمارين لهذا الدرس حالياً</p>
+      </div>
+    `;
+    return;
+  }
+  
+  let html = '';
+  for (let i = 0; i < exercises.length; i++) {
+    const ex = exercises[i];
+    const difficultyText = ex.difficulty === 'easy' ? 'سهل' : (ex.difficulty === 'medium' ? 'متوسط' : 'صعب');
+    html += `
+      <div class="exercise-item">
+        <div class="exercise-question" onclick="toggleExercise(this)">
+          <div class="exercise-info">
+            <div class="exercise-number">${i + 1}</div>
+            <div class="exercise-title">${ex.title}</div>
+            <span class="exercise-difficulty ${ex.difficulty}">${difficultyText}</span>
+          </div>
+          <div class="toggle-icon">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="exercise-content">
+          <div class="exercise-image">
+            <img src="${ex.exerciseImage}" 
+                 alt="التمرين ${i + 1}"
+                 onclick="openLightbox(this.src)"
+                 onerror="this.src='https://placehold.co/600x400/ef4444/white?text=Image+not+found'">
+            <div class="image-caption">📸 انقر على الصورة للتكبير</div>
+          </div>
+          <div class="correction-header" onclick="toggleCorrection(this)">
+            <i class="fas fa-chevron-left"></i>
+            <span>📖 التصحيح</span>
+          </div>
+          <div class="correction-content">
+            <div class="correction-image">
+              <img src="${ex.correctionImage}" 
+                   alt="تصحيح التمرين ${i + 1}"
+                   onclick="openLightbox(this.src)"
+                   onerror="this.src='https://placehold.co/600x400/ef4444/white?text=Correction+not+found'">
+              <div class="image-caption">📸 انقر على الصورة للتكبير</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  
+  container.innerHTML = html;
+}
+
+// Toggle functions - Make them global
+window.toggleExercise = function(element) {
+  const parent = element.closest('.exercise-item');
+  const content = parent.querySelector('.exercise-content');
+  element.classList.toggle('open');
+  content.classList.toggle('open');
+};
+
+window.toggleCorrection = function(element) {
+  const content = element.nextElementSibling;
+  element.classList.toggle('open');
+  content.classList.toggle('open');
+};
+
+window.openLightbox = function(src) {
+  let lightbox = document.querySelector('.image-lightbox');
+  if (!lightbox) {
+    lightbox = document.createElement('div');
+    lightbox.className = 'image-lightbox';
+    lightbox.innerHTML = `
+      <div class="close-lightbox">✕</div>
+      <img src="">
+    `;
+    document.body.appendChild(lightbox);
+    
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox || e.target.classList.contains('close-lightbox')) {
+        lightbox.classList.remove('active');
+      }
+    });
+  }
+  
+  lightbox.querySelector('img').src = src;
+  lightbox.classList.add('active');
+};
+
+// Update the initLessonPage function to call renderExercises
+function initLessonPage() {
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get('slug');
+
+  if (!slug) {
+    showLessonError();
+    return;
+  }
+
+  const lesson = LESSONS.find(l => l.slug === slug);
+  if (!lesson) {
+    showLessonError();
+    return;
+  }
+
+  renderLessonContent(lesson);
+  
+  // Call renderExercises here
+  renderExercises(slug);
+
+  // Related lessons
+  const related = LESSONS.filter(l => l.level === lesson.level && l.slug !== slug).slice(0, 3);
+  const relatedContainer = document.getElementById('related-lessons');
+  if (relatedContainer) {
+    renderLessonCards(related, relatedContainer);
+  }
+}
+
