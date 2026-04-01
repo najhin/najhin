@@ -1413,3 +1413,250 @@ input, textarea, select {
     padding: 1.75rem 1.25rem;
   }
 }
+
+
+
+/* ==========================================
+   EXERCISES SECTION
+   ========================================== */
+
+.exercises-section {
+  margin: 2rem 0;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.exercises-header {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+}
+
+.exercises-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.exercises-title i {
+  font-size: 1.2rem;
+}
+
+.exercises-title h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.exercises-subtitle {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.exercise-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.exercise-item:last-child {
+  border-bottom: none;
+}
+
+.exercise-question {
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-card);
+  transition: background 0.2s;
+}
+
+.exercise-question:hover {
+  background: var(--bg-section-alt);
+}
+
+.exercise-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.exercise-number {
+  width: 28px;
+  height: 28px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.exercise-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.exercise-difficulty {
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.exercise-difficulty.easy {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.exercise-difficulty.medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+.exercise-difficulty.hard {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.toggle-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-section-alt);
+  border-radius: 50%;
+  transition: transform 0.2s;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+
+.exercise-question.open .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.exercise-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: var(--bg-section-alt);
+}
+
+.exercise-content.open {
+  max-height: 800px;
+  transition: max-height 0.4s ease-in;
+}
+
+.exercise-image, .correction-image {
+  padding: 1rem;
+  text-align: center;
+}
+
+.exercise-image img, .correction-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.correction-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  margin: 0 1rem 0.5rem 1rem;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.correction-header i {
+  color: #10b981;
+  font-size: 0.8rem;
+  transition: transform 0.2s;
+}
+
+.correction-header.open i {
+  transform: rotate(90deg);
+}
+
+.correction-header span {
+  color: #10b981;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.correction-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.correction-content.open {
+  max-height: 600px;
+}
+
+.image-caption {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* Lightbox */
+.image-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.95);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.image-lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 1.5rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
