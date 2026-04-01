@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الباقة المميزة - تمارين إضافية ودروس خصوصية | Najhin نجحين</title>
+  <meta name="description" content="احصل على تمارين إضافية، دروس خصوصية، وتحضير مكثف للباكالوريا مع الأستاذ. اشترك الآن في الباقة المميزة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Premium Page Additional Styles */
+    .premium-page {
+      background: linear-gradient(135deg, var(--bg) 0%, var(--bg-section-alt) 100%);
+    }
+    
+    .premium-hero {
+      background: linear-gradient(135deg, #f59e0b, #d97706, #f59e0b);
+      padding: 4rem 1.5rem;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .premium-hero::before {
+      content: "★";
+      position: absolute;
+      font-size: 300px;
+      opacity: 0.1;
+      bottom: -50px;
+      left: -50px;
+      transform: rotate(15deg);
+    }
+    
+    .premium-hero::after {
+      content: "✨";
+      position: absolute;
+      font-size: 200px;
+      opacity: 0.1;
+      top: -50px;
+      right: -50px;
+    }
+    
+    .premium-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+    
+    .premium-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+    
+    .premium-hero h1 span {
+      background: linear-gradient(135deg, #fff, #fef3c7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .price-highlight {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+    
+    .price-highlight small {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    
+    .btn-cta {
+      background: white;
+      color: #d97706;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .btn-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .feature-card {
+      background: var(--bg-card);
+      border-radius: 24px;
+      padding: 2rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      border-color: #f59e0b;
+    }
+    
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #f59e0b20, #d9770620);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 2rem;
+      color: #f59e0b;
+    }
+    
+    .feature-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    
+    /* Pricing Section */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .pricing-card {
+      background: var(--bg-card);
+      border-radius: 24px;
+      padding: 2rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      position: relative;
+      transition: all 0.3s;
+    }
+    
+    .pricing-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .pricing-card.popular {
+      border: 2px solid #f59e0b;
+      transform: scale(1.02);
+    }
+    
+    .popular-badge {
+      position: absolute;
+      top: -12px;
+      right: 50%;
+      transform: translateX(50%);
+      background: #f59e0b;
+      color: white;
+      padding: 0.2rem 1rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    
+    .pricing-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .pricing-price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f59e0b;
+      margin: 1rem 0;
+    }
+    
+    .pricing-price small {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    
+    .discount-badge {
+      color: #10b981;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      text-align: right;
+    }
+    
+    .pricing-features li {
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+    
+    .pricing-features li i {
+      color: #10b981;
+      font-size: 0.8rem;
+    }
+    
+    .btn-subscribe, .btn-primary, .btn-outline-primary {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: all 0.3s;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    
+    .btn-subscribe {
+      background: #f59e0b;
+      color: white;
+    }
+    
+    .btn-subscribe:hover {
+      background: #d97706;
+      transform: translateY(-2px);
+    }
+    
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+    
+    .btn-outline-primary {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    
+    .btn-outline-primary:hover {
+      background: var(--primary);
+      color: white;
+    }
+    
+    /* Comparison Table */
+    .comparison-table {
+      background: var(--bg-card);
+      border-radius: 24px;
+      overflow-x: auto;
+      margin: 3rem 0;
+      border: 1px solid var(--border);
+    }
+    
+    .comparison-table table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 500px;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .comparison-table th {
+      background: var(--bg-section-alt);
+      font-weight: 700;
+    }
+    
+    .comparison-table td:first-child,
+    .comparison-table th:first-child {
+      text-align: right;
+      font-weight: 600;
+    }
+    
+    .check {
+      color: #10b981;
+      font-size: 1.2rem;
+    }
+    
+    .times {
+      color: #ef4444;
+      font-size: 1.2rem;
+    }
+    
+    /* Testimonials */
+    .testimonials-slider {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .testimonial-card {
+      background: var(--bg-card);
+      border-radius: 24px;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    
+    .testimonial-card::before {
+      content: "“";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 4rem;
+      color: #f59e0b20;
+      font-family: serif;
+    }
+    
+    .testimonial-stars {
+      color: #fbbf24;
+      margin-bottom: 1rem;
+    }
+    
+    .testimonial-text {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .testimonial-author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--bg-section-alt);
+    }
+    
+    .testimonial-author strong {
+      display: block;
+      font-size: 1rem;
+    }
+    
+    .testimonial-author span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    
+    /* FAQ Section */
+    .faq-section {
+      margin: 4rem 0;
+    }
+    
+    .faq-item {
+      background: var(--bg-card);
+      border-radius: 16px;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      padding: 1.2rem 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      background: var(--bg-card);
+    }
+    
+    .faq-question:hover {
+      background: var(--bg-section-alt);
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 1.5rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 1.5rem 1.2rem 1.5rem;
+    }
+    
+    .faq-item.open .faq-question i {
+      transform: rotate(180deg);
+    }
+    
+    /* CTA Section */
+    .cta-premium {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      border-radius: 24px;
+      padding: 3rem;
+      text-align: center;
+      color: white;
+      margin: 3rem 0;
+    }
+    
+    .cta-premium h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .cta-premium p {
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      z-index: 10000;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .modal.active {
+      display: flex;
+    }
+    
+    .modal-content {
+      background: var(--bg-card);
+      border-radius: 24px;
+      max-width: 500px;
+      width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      animation: modalSlideIn 0.3s ease;
+    }
+    
+    @keyframes modalSlideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      z-index: 1;
+    }
+    
+    .close-modal:hover {
+      color: var(--danger);
+    }
+    
+    .modal-header {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+      border-radius: 24px 24px 0 0;
+    }
+    
+    .modal-header i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .modal-header h2 {
+      margin: 0 0 0.5rem 0;
+    }
+    
+    .plan-selector {
+      margin-bottom: 1.5rem;
+    }
+    
+    .plan-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    
+    .plan-btn {
+      flex: 1;
+      padding: 0.8rem;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      background: var(--bg-card);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .plan-btn.active {
+      border-color: #f59e0b;
+      background: #f59e0b10;
+    }
+    
+    .payment-btn {
+      flex: 1;
+      padding: 0.8rem;
+      background: var(--bg-section-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    
+    .payment-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    
+    @media (max-width: 768px) {
+      .comparison-table {
+        overflow-x: auto;
+      }
+      
+      .testimonials-slider {
+        grid-template-columns: 1fr;
+      }
+      
+      .cta-premium {
+        padding: 2rem;
+      }
+      
+      .plan-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body class="premium-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <span>Najhin نجحين</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="tronc.html">جذع مشترك</a>
+        <a href="1bac.html">أولى باك</a>
+        <a href="2bac.html">ثانية باك</a>
+        <a href="premium.html" class="active" style="color: #f59e0b;">الباقة المميزة</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-theme-toggle" aria-label="تغيير الوضع">
+          <i class="fas fa-moon theme-icon"></i>
+        </button>
+        <button class="btn-menu" aria-label="القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+      <a href="tronc.html"><i class="fas fa-book"></i> جذع مشترك</a>
+      <a href="1bac.html"><i class="fas fa-book-open"></i> أولى باك</a>
+      <a href="2bac.html"><i class="fas fa-star"></i> ثانية باك</a>
+      <a href="premium.html" class="active"><i class="fas fa-crown"></i> الباقة المميزة</a>
+    </div>
+  </nav>
+
+  <!-- PREMIUM HERO -->
+  <div class="premium-hero">
+    <div class="container">
+      <div class="premium-badge">
+        <i class="fas fa-crown"></i> عرض خاص للطلاب المتميزين
+      </div>
+      <h1>
+        <span>ارفع مستواك</span><br>
+        مع الباقة المميزة
+      </h1>
+      <p>تمارين إضافية، دروس خصوصية، وتحضير مكثف للباكالوريا مع أستاذ متخصص</p>
+      <div class="price-highlight">
+        99 MAD/<small>شهر</small>
+      </div>
+      <button class="btn-cta" onclick="openSubscriptionModal()">
+        <i class="fas fa-gem"></i> اشترك الآن
+      </button>
+      <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.8;">
+        ✓ إلغاء في أي وقت ✓ ضمان استعادة المبلغ خلال 7 أيام
+      </p>
+    </div>
+  </div>
+
+  <!-- FEATURES SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <i class="fas fa-star"></i>
+          ماذا تحصل مع الباقة المميزة؟
+        </div>
+        <h2>مزايا حصرية لطلاب النجاح</h2>
+        <p>كل ما تحتاجه للتفوق في الرياضيات في مكان واحد</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>تمارين إضافية</h3>
+          <p>50+ تمرين إضافي لكل درس مع تصحيح مفصل خطوة بخطوة</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3>دروس فيديو حصرية</h3>
+          <p>شروحات مفصلة للحلول وتمارير الباكالوريا السابقة</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chalkboard-user"></i>
+          </div>
+          <h3>جلسات مباشرة أسبوعية</h3>
+          <p>لقاءات مباشرة مع الأستاذ لحل الأسئلة ومناقشة الصعوبات</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>تقارير تقدم شخصية</h3>
+          <p>تحليل أدائك وتوصيات مخصصة لتحسين مستواك</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>شهادة إتمام معتمدة</h3>
+          <p>شهادة رسمية عند إتمام المستوى بنجاح</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>دعم أولوية</h3>
+          <p>رد على الأسئلة خلال 24 ساعة عبر WhatsApp والمجموعات الخاصة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PLANS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <i class="fas fa-tag"></i>
+          خطط الاشتراك
+        </div>
+        <h2>اختر الخطة المناسبة لك</h2>
+        <p>خطط مرنة تناسب جميع الطلاب</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>الباقة الأساسية</h3>
+          <div class="pricing-price">99 MAD<small>/شهر</small></div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 50+ تمرين إضافي لكل درس</li>
+            <li><i class="fas fa-check"></i> تصحيح مفصل للتمارين</li>
+            <li><i class="fas fa-check"></i> اختبارات أسبوعية</li>
+            <li><i class="fas fa-check"></i> مجموعة دعم على WhatsApp</li>
+          </ul>
+          <button class="btn-subscribe" onclick="openSubscriptionModal()">اختر هذه الباقة</button>
+        </div>
+        
+        <div class="pricing-card popular">
+          <div class="popular-badge">⭐ الأكثر طلباً</div>
+          <h3>الباقة الاحترافية</h3>
+          <div class="pricing-price">199 MAD<small>/شهر</small></div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> كل ما في الباقة الأساسية</li>
+            <li><i class="fas fa-check"></i> جلسات خصوصية أسبوعية</li>
+            <li><i class="fas fa-check"></i> دروس فيديو حصرية</li>
+            <li><i class="fas fa-check"></i> تقارير تقدم شخصية</li>
+            <li><i class="fas fa-check"></i> شهادة إتمام المستوى</li>
+            <li><i class="fas fa-check"></i> أولوية في الرد على الأسئلة</li>
+          </ul>
+          <button class="btn-subscribe" onclick="openSubscriptionModal()">اختر هذه الباقة</button>
+        </div>
+        
+        <div class="pricing-card">
+          <h3>الباقة السنوية</h3>
+          <div class="pricing-price">1,990 MAD<small>/سنة</small></div>
+          <div class="discount-badge">✨ وفر 16% ✨</div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> كل ما في الاحترافية</li>
+            <li><i class="fas fa-check"></i> 3 أشهر مجانية</li>
+            <li><i class="fas fa-check"></i> جلسة خاصة مع الأستاذ</li>
+            <li><i class="fas fa-check"></i> كتاب تمارين PDF حصري</li>
+          </ul>
+          <button class="btn-subscribe" onclick="openSubscriptionModal()">اختر هذه الباقة</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <i class="fas fa-table"></i>
+          مقارنة الباقات
+        </div>
+        <h2>ماذا تحصل في كل باقة؟</h2>
+      </div>
+
+      <div class="comparison-table">
+        <table>
+          <thead>
+            <tr>
+              <th>الميزة</th>
+              <th>مجاني</th>
+              <th>الباقة الأساسية</th>
+              <th>الباقة الاحترافية</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>الدروس الأساسية</td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td>تمارين أساسية</td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td>تمارين إضافية (50+)</td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td>تصحيح مفصل للتمارين</td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td>دروس فيديو حصرية</td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td>جلسات مباشرة أسبوعية</td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td>تقرير تقدم شخصي</td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td>شهادة إتمام معتمدة</td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="times"><i class="fas fa-times-circle"></i></td>
+              <td class="check"><i class="fas fa-check-circle"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAC PREPARATION COURSES -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <i class="fas fa-graduation-cap"></i>
+          تحضير الباكالوريا
+        </div>
+        <h2>دورات مكثفة للباك</h2>
+        <p>استعد لامتحان الباكالوريا مع برامج خاصة</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card" style="border: 2px solid #f59e0b;">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white;">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>الدورة المكثفة للباك 2024</h3>
+          <div style="margin: 0.5rem 0;">
+            <span style="background: #f59e0b20; color: #f59e0b; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">🔥 عرض خاص</span>
+          </div>
+          <p>مراجعة شاملة لجميع دروس الباك مع تمارين وامتحانات تجريبية</p>
+          <div style="margin: 1rem 0; text-align: right;">
+            <div><i class="fas fa-calendar"></i> 4 أسابيع</div>
+            <div><i class="fas fa-clock"></i> 8 جلسات (3 ساعات لكل جلسة)</div>
+            <div><i class="fas fa-users"></i> مجموعات صغيرة (10-15 طالب)</div>
+          </div>
+          <div style="margin: 1rem 0;">
+            <span style="text-decoration: line-through; color: var(--text-muted);">1,200 MAD</span>
+            <span style="font-size: 1.5rem; font-weight: bold; color: #f59e0b;"> 799 MAD</span>
+          </div>
+          <button class="btn-primary" style="width: 100%;" onclick="openSubscriptionModal()">
+            <i class="fas fa-gem"></i> سجل الآن
+          </button>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chalkboard-user"></i>
+          </div>
+          <h3>دروس خصوصية فردية</h3>
+          <p>جلسات فردية مع الأستاذ لمعالجة النقاط الضعيفة وتحسين المستوى بسرعة</p>
+          <div style="margin: 1rem 0; text-align: right;">
+            <div><i class="fas fa-clock"></i> حسب الطلب</div>
+            <div><i class="fas fa-video"></i> عبر Google Meet / Zoom</div>
+            <div><i class="fas fa-file-alt"></i> متابعة شخصية</div>
+          </div>
+          <div style="margin: 1rem 0;">
+            <span style="font-size: 1.5rem; font-weight: bold; color: var(--primary);">200 MAD</span>
+            <span>/ ساعة</span>
+          </div>
+          <button class="btn-outline-primary" style="width: 100%;" onclick="contactTeacher()">
+            <i class="fab fa-whatsapp"></i> تواصل مع الأستاذ
+          </button>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>مجموعات المراجعة</h3>
+          <p>جلسات جماعية للمراجعة وحل التمارين مع زملائك</p>
+          <div style="margin: 1rem 0; text-align: right;">
+            <div><i class="fas fa-calendar"></i> كل يوم سبت</div>
+            <div><i class="fas fa-clock"></i> 10:00 - 12:00</div>
+            <div><i class="fas fa-tag"></i> شامل مع الباقة الاحترافية</div>
+          </div>
+          <button class="btn-primary" style="width: 100%;" onclick="openSubscriptionModal()">
+            <i class="fas fa-crown"></i> اشترك في الباقة
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <i class="fas fa-heart"></i>
+          آراء طلابي
+        </div>
+        <h2>ماذا يقول الطلاب عني؟</h2>
+        <p>قصص نجاح حقيقية من طلاب استفادوا من الباقة المميزة</p>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-text">
+            "فضل الأستاذ هو السبب الرئيسي في حصولي على 18 في الباكالوريا. التمارين الإضافية والجلسات المباشرة غيرت مستواي تماماً."
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="طالب">
+            <div>
+              <strong>أحمد العمراني</strong>
+              <span>باكالوريا 2024 - 18/20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-text">
+            "كنت أعاني في مادة الرياضيات، لكن بعد الاشتراك في الباقة وتلقي الدروس الخصوصية، أصبحت من الأوائل في القسم. شكراً أستاذ!"
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="طالبة">
+            <div>
+              <strong>فاطمة الزهراء</strong>
+              <span>أولى باك - معدل 17.5</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-text">
+            "الدورة المكثفة للباك كانت أفضل استثمار. التمارين كانت مطابقة لامتحان الباك، والتصحيح المفصل ساعدني على فهم أخطائي."
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="طالب">
+            <div>
+              <strong>يوسف البقالي</strong>
+              <span>باكالوريا 2024 - 19/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">
+          <i class="fas fa-question-circle"></i>
+          أسئلة شائعة
+        </div>
+        <h2>الأسئلة الأكثر تكراراً</h2>
+      </div>
+
+      <div class="faq-section">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>كيف يمكنني الاشتراك في الباقة المميزة؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            يمكنك الاشتراك من خلال النقر على زر "اشترك الآن" واختيار الباقة المناسبة، ثم متابعة عملية الدفع عبر إحدى الطرق المتاحة (CIH BANK، Orange Money، أو بطاقة الائتمان). سيتم التواصل معك خلال 24 ساعة لتأكيد الاشتراك.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>هل يمكنني إلغاء الاشتراك في أي وقت؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            نعم، يمكنك إلغاء الاشتراك في أي وقت. سيتم إلغاء التجديد التلقائي، وستبقى لك صلاحية الوصول حتى نهاية الفترة المدفوعة. يمكنك إلغاء الاشتراك عبر التواصل معي مباشرة على WhatsApp.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>ماذا تتضمن التمارين الإضافية؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            التمارين الإضافية تشمل تمارين من الباكالوريا السابقة، تمارين متقدمة، وسلاسل تمارين شاملة مع تصحيح مفصل خطوة بخطوة وفيديوهات شرح للحلول. يتم تحديث التمارين باستمرار.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>كيف تتم الجلسات المباشرة؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            الجلسات المباشرة تعقد عبر Google Meet أو Zoom. يتم إرسال رابط الجلسة قبل 24 ساعة عبر البريد الإلكتروني ومجموعة WhatsApp الخاصة. يمكنك التفاعل وطرح الأسئلة مباشرة أثناء الجلسة.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>هل هناك ضمان لاستعادة المبلغ؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            نعم، نوفر ضمان استعادة المبلغ خلال 7 أيام من تاريخ الاشتراك إذا لم تكن راضياً عن الخدمة. فقط تواصل معي عبر WhatsApp وسيتم استرداد المبلغ بالكامل.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <div class="container">
+    <div class="cta-premium">
+      <h2>جاهز للانطلاق نحو النجاح؟</h2>
+      <p>انضم إلى مئات الطلاب الذين طوروا مستواهم مع الباقة المميزة</p>
+      <button class="btn-cta" onclick="openSubscriptionModal()">
+        <i class="fas fa-gem"></i> ابدأ رحلتك الآن
+      </button>
+      <p style="margin-top: 1rem; font-size: 0.8rem;">
+        ✨ تجربة مجانية لمدة 7 أيام مع الباقة الاحترافية
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+          <span>Najhin نجحين</span>
+        </a>
+        <p style="margin-top:1rem">منصة تعليمية مجانية مع باقة مميزة للطلاب الراغبين في التفوق.</p>
+      </div>
+      <div class="footer-col">
+        <h4>المستويات</h4>
+        <ul>
+          <li><a href="tronc.html">الجذع المشترك</a></li>
+          <li><a href="1bac.html">أولى باكالوريا</a></li>
+          <li><a href="2bac.html">ثانية باكالوريا</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>الباقة المميزة</h4>
+        <ul>
+          <li><a href="premium.html">الاشتراك</a></li>
+          <li><a href="#" onclick="openSubscriptionModal(); return false;">الأسعار</a></li>
+          <li><a href="#" onclick="contactTeacher(); return false;">تواصل مع الأستاذ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>روابط</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="#" onclick="document.querySelector('.faq-section').scrollIntoView({behavior: 'smooth'}); return false;">الأسئلة الشائعة</a></li>
+          <li><a href="#">سياسة الخصوصية</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom" style="max-width:1200px;margin:0 auto">
+      <p>© 2024 Najhin نجحين — جميع الحقوق محفوظة</p>
+      <div class="footer-social">
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" onclick="contactTeacher(); return false;" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="العودة للأعلى">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- MODAL FOR SUBSCRIPTION -->
+  <div id="subscription-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeSubscriptionModal()">&times;</span>
+      <div class="modal-header">
+        <i class="fas fa-crown"></i>
+        <h2>اشترك في الباقة المميزة</h2>
+        <p>اختر طريقة الدفع المناسبة لك</p>
+      </div>
+      <div style="padding: 1.5rem;">
+        <div class="plan-selector">
+          <h4>اختر الباقة:</h4>
+          <div class="plan-buttons">
+            <button class="plan-btn active" onclick="selectPlan('basic', this)">
+              <strong>الأساسية</strong><br>
+              <span style="color: #f59e0b;">99 MAD/شهر</span>
+            </button>
+            <button class="plan-btn" onclick="selectPlan('pro', this)">
+              <strong>الاحترافية</strong><br>
+              <span style="color: #f59e0b;">199 MAD/شهر</span>
+              <span style="font-size: 0.7rem;">⭐ الأكثر طلباً</span>
+            </button>
+            <button class="plan-btn" onclick="selectPlan('yearly', this)">
+              <strong>السنوية</strong><br>
+              <span style="color: #f59e0b;">1,990 MAD/سنة</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="payment-methods">
+          <h4>طريقة الدفع:</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 1rem 0;">
+            <button class="payment-btn" onclick="processPayment('cih')">
+              <i class="fas fa-university"></i> CIH BANK
+            </button>
+            <button class="payment-btn" onclick="processPayment('orange')">
+              <i class="fas fa-mobile-alt"></i> Orange Money
+            </button>
+            <button class="payment-btn" onclick="processPayment('inwi')">
+              <i class="fas fa-mobile-alt"></i> Inwi Money
+            </button>
+          </div>
+        </div>
+        
+        <div class="contact-info" style="text-align: center; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+          <p>أو تواصل معي مباشرة:</p>
+          <div style="display: flex; justify-content: center; gap: 1rem;">
+            <a href="https://wa.me/212600000000" target="_blank" style="color: #25D366; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:212600000000" style="color: var(--primary); font-size: 1.5rem;"><i class="fas fa-phone"></i></a>
+          </div>
+          <p style="font-size: 0.8rem; margin-top: 0.5rem;">للحصول على عرض خاص أو استفسار: <strong>+212 600-000000</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Modal Functions
+    let currentPlan = 'basic';
+    
+    function openSubscriptionModal() {
+      const modal = document.getElementById('subscription-modal');
+      if (modal) modal.classList.add('active');
+    }
+    
+    function closeSubscriptionModal() {
+      const modal = document.getElementById('subscription-modal');
+      if (modal) modal.classList.remove('active');
+    }
+    
+    function selectPlan(plan, element) {
+      currentPlan = plan;
+      document.querySelectorAll('.plan-btn').forEach(btn => btn.classList.remove('active'));
+      element.classList.add('active');
+    }
+    
+    function processPayment(method) {
+      let planName = '';
+      let planPrice = '';
+      
+      if (currentPlan === 'basic') {
+        planName = 'الباقة الأساسية';
+        planPrice = '99 MAD';
+      } else if (currentPlan === 'pro') {
+        planName = 'الباقة الاحترافية';
+        planPrice = '199 MAD';
+      } else {
+        planName = 'الباقة السنوية';
+        planPrice = '1,990 MAD';
+      }
+      
+      alert(`✅ شكراً لاختيارك ${planName}\n\n📦 الباقة: ${planName}\n💰 المبلغ: ${planPrice}\n💳 طريقة الدفع: ${method.toUpperCase()}\n\n📞 سيتم التواصل معك خلال 24 ساعة لتأكيد الاشتراك.\n\nللاستفسار السريع: WhatsApp +212 600-000000`);
+      
+      closeSubscriptionModal();
+    }
+    
+    function contactTeacher() {
+      window.open('https://wa.me/212600000000', '_blank');
+    }
+    
+    function toggleFaq(element) {
+      const item = element.closest('.faq-item');
+      item.classList.toggle('open');
+    }
+    
+    // Make functions global
+    window.openSubscriptionModal = openSubscriptionModal;
+    window.closeSubscriptionModal = closeSubscriptionModal;
+    window.selectPlan = selectPlan;
+    window.processPayment = processPayment;
+    window.contactTeacher = contactTeacher;
+    window.toggleFaq = toggleFaq;
+    
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('subscription-modal');
+      if (event.target === modal) {
+        closeSubscriptionModal();
+      }
+    };
+  </script>
+</body>
+</html>
