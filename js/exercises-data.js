@@ -34,15 +34,23 @@ window.EXERCISES = {
     {
       id: 1,
       title: "التمرين 1: معادلة لوغاريتمية",
-      difficulty: "medium",
-      exerciseImage: "https://drive.google.com/file/d/1k_JCh8mr0887GgN6-mGSHpLMJZwRln9C/view?usp=drive_link",
+      difficulty: "esay",
+      exerciseImage: "https://i.ibb.co/bMnRYs5L/log-ex1.jpg",
       correctionImage: "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.math-exercises.com%2Falgebraic-expressions-and-polynomials%2Fformulas-for-algebraic-expressions-expending-factoring-and-grouping-the-terms&ved=0CBYQjRxqFwoTCPD4pOnbzZMDFQAAAAAdAAAAABAH&opi=89978449"
     },
- {
+    
+    {
       id: 2,
       title: "التمرين 2: معادلة لوغاريتمية",
-      difficulty: "hard",
-      exerciseImage: "https://placehold.co/600x400/2563eb/white?text=ln(x²-4)+=+ln(3x-6)",
+      difficulty: "easy",
+      exerciseImage: "https://i.ibb.co/21p1SZFJ/log-ex2.jpg",
+      correctionImage: "https://placehold.co/600x400/10b981/white?text=لا+يوجد+حل"
+    },
+ {
+      id: 3,
+      title: "التمرين 2: معادلة لوغاريتمية",
+      difficulty: "medium",
+      exerciseImage: "https://i.ibb.co/tpjVMH7j/log-ex3.jpg",
       correctionImage: "https://placehold.co/600x400/10b981/white?text=لا+يوجد+حل"
     }
   ]
