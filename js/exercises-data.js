@@ -35,7 +35,7 @@ window.EXERCISES = {
       id: 1,
       title: "التمرين 1: معادلة لوغاريتمية",
       difficulty: "medium",
-      exerciseImage: "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.math-exercises.com%2Falgebraic-expressions-and-polynomials%2Fformulas-for-algebraic-expressions-expending-factoring-and-grouping-the-terms&ved=0CBYQjRxqFwoTCPD4pOnbzZMDFQAAAAAdAAAAABAH&opi=89978449",
+      exerciseImage: "https://drive.google.com/file/d/1k_JCh8mr0887GgN6-mGSHpLMJZwRln9C/view?usp=drive_link",
       correctionImage: "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.math-exercises.com%2Falgebraic-expressions-and-polynomials%2Fformulas-for-algebraic-expressions-expending-factoring-and-grouping-the-terms&ved=0CBYQjRxqFwoTCPD4pOnbzZMDFQAAAAAdAAAAABAH&opi=89978449"
     },
  {
