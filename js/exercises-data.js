@@ -34,7 +34,7 @@ window.EXERCISES = {
     {
       id: 1,
       title: "التمرين 1: معادلة لوغاريتمية",
-      difficulty: "esay",
+      difficulty: "easy",
       exerciseImage: "https://i.ibb.co/bMnRYs5L/log-ex1.jpg",
       correctionImage: "https://i.ibb.co/1YKmZn6K/ex-1-c-Exercice-1-Domaine-de-D-finition.png"
     },
@@ -44,7 +44,7 @@ window.EXERCISES = {
       title: "التمرين 2: معادلة لوغاريتمية",
       difficulty: "easy",
       exerciseImage: "https://i.ibb.co/21p1SZFJ/log-ex2.jpg",
-      correctionImage: "https://placehold.co/600x400/10b981/white?text=لا+يوجد+حل"
+      correctionImage: "https://i.ibb.co/RdXyr0c/ex-2-c-Exercice-1-quations-et-In-quations.png"
     },
  {
       id: 3,
