@@ -36,7 +36,7 @@ window.EXERCISES = {
       title: "التمرين 1: معادلة لوغاريتمية",
       difficulty: "esay",
       exerciseImage: "https://i.ibb.co/bMnRYs5L/log-ex1.jpg",
-      correctionImage: "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.math-exercises.com%2Falgebraic-expressions-and-polynomials%2Fformulas-for-algebraic-expressions-expending-factoring-and-grouping-the-terms&ved=0CBYQjRxqFwoTCPD4pOnbzZMDFQAAAAAdAAAAABAH&opi=89978449"
+      correctionImage: "https://i.ibb.co/1YKmZn6K/ex-1-c-Exercice-1-Domaine-de-D-finition.png"
     },
     
     {
