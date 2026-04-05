@@ -122,114 +122,125 @@ const LESSONS = [
   },
 
   /* ---- 2ÈME BAC ---- */
-  {
-    id: 9,
-    slug: 'logarithms',
-    title: 'الدوال اللوغاريتمية',
-    titleFr: 'Fonctions Logarithmiques',
-    description: 'دراسة اللوغاريتم الطبيعي وخواصه الأساسية: الاشتقاق، النهايات، والدراسة الكاملة.',
-    level: '2bac',
-    levelLabel: 'ثانية باك',
-    youtubeId: 'VIDEO_ID_9',
-    pdfPath: 'assets/pdfs/2bac/logarithms.pdf',
-    topics: ['خواص ln', 'اشتقاق ln', 'حل المعادلات']
-  },
-
-   {
-  id: 10,
-  slug: 'exponential',
-  title: 'الدوال الأسية',
-  titleFr: 'Fonctions Exponentielles',
-  description: 'Étude de la fonction exponentielle : propriétés, dérivation, croissance et résolution d’équations exponentielles.',
+ {
+  id: 9,
+  slug: 'limites-continuite',
+  title: 'النهايات والاستمرارية',
+  titleFr: 'Limites et continuité',
+  description: 'Étude des limites des fonctions et de la continuité avec des applications graphiques.',
   level: '2bac',
   levelLabel: 'ثانية باك',
-  youtubeId: 'k6U-i4gXkLM',
-  pdfPath: 'https://www.maths-et-tiques.fr/telech/Exponentielle.pdf',
-  topics: ['الدالة e^x', 'خواص الأس', 'حل المعادلات الأسية']
+  youtubeId: 'y6YyZcP6qkQ',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Limites.pdf',
+  topics: ['limites', 'continuité', 'étude des fonctions']
+},
+{
+  id: 10,
+  slug: 'derivation-etude-fonctions',
+  title: 'الاشتقاق ودراسة الدوال',
+  titleFr: 'Dérivation et étude des fonctions',
+  description: 'Calcul de la dérivée et étude des variations des fonctions.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: '8gZx2t1jG7A',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Derivation.pdf',
+  topics: ['dérivée', 'tangente', 'variations']
 },
 {
   id: 11,
-  slug: 'complex',
-  title: 'الأعداد العقدية',
-  titleFr: 'Nombres Complexes',
-  description: 'Introduction aux nombres complexes : forme algébrique, trigonométrique et exponentielle, avec applications géométriques.',
+  slug: 'primitives',
+  title: 'البدائيات',
+  titleFr: 'Primitives',
+  description: 'Détermination des primitives des fonctions et méthodes de calcul.',
   level: '2bac',
   levelLabel: 'ثانية باك',
-  youtubeId: 'NybHckSEQBI',
-  pdfPath: 'https://www.maths-et-tiques.fr/telech/Complexes.pdf',
-  topics: ['الشكل الجبري', 'الشكل المثلثي', 'الشكل الأسي']
+  youtubeId: 'sSx7k1o1K5E',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Primitives.pdf',
+  topics: ['primitives', 'règles de calcul', 'fonctions usuelles']
 },
 {
   id: 12,
-  slug: 'sequences-logic',
-  title: 'المتتاليات والمنطق',
-  titleFr: 'Suites et Logique',
-  description: 'Étude des suites numériques et introduction à la logique mathématique : convergence et raisonnement par récurrence.',
+  slug: 'suites-numeriques',
+  title: 'المتتاليات العددية',
+  titleFr: 'Suites numériques',
+  description: 'Étude des suites numériques, convergence et propriétés des suites.',
   level: '2bac',
   levelLabel: 'ثانية باك',
-  youtubeId: 'y8lWcZq0w6Q',
+  youtubeId: '0oF5WQYkX8g',
   pdfPath: 'https://www.maths-et-tiques.fr/telech/Suites.pdf',
-  topics: ['تقارب المتتاليات', 'البرهان بالتحريض', 'المنطق الرياضي']
+  topics: ['suites', 'limite', 'convergence']
 },
 {
   id: 13,
-  slug: 'integrale',
-  title: 'التكامل',
-  titleFr: 'Calcul Intégral',
-  description: 'Calcul de l’intégrale d’une fonction continue, primitives et applications au calcul d’aires.',
+  slug: 'fonction-logarithme',
+  title: 'الدالة اللوغاريتمية',
+  titleFr: 'Fonction logarithme népérien',
+  description: 'Étude de la fonction logarithme népérien et ses propriétés.',
   level: '2bac',
   levelLabel: 'ثانية باك',
-  youtubeId: 'rfG8ce4nNh0',
-  pdfPath: 'https://www.maths-et-tiques.fr/telech/Integrales.pdf',
-  topics: ['النهايات', 'الدوال الأصلية', 'حساب المساحات']
+  youtubeId: 'yK0c3Wf3M4o',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Logarithme.pdf',
+  topics: ['logarithme', 'propriétés', 'équations logarithmiques']
 },
 {
   id: 14,
-  slug: 'equations-differentielles',
-  title: 'المعادلات التفاضلية',
-  titleFr: 'Équations différentielles',
-  description: 'Résolution des équations différentielles du premier ordre et applications.',
+  slug: 'fonction-exponentielle',
+  title: 'الدالة الأسية',
+  titleFr: 'Fonction exponentielle',
+  description: 'Étude de la fonction exponentielle et ses applications.',
   level: '2bac',
   levelLabel: 'ثانية باك',
-  youtubeId: '7w8Y7F6kFZk',
-  pdfPath: 'https://www.maths-et-tiques.fr/telech/EquaDiff.pdf',
-  topics: ['معادلات تفاضلية', 'الحل العام', 'تطبيقات']
+  youtubeId: '5Jp0w9y1G8A',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Exponentielle.pdf',
+  topics: ['fonction exponentielle', 'propriétés', 'équations exponentielles']
 },
 {
   id: 15,
-  slug: 'denombrement',
-  title: 'التعداد',
-  titleFr: 'Dénombrement',
-  description: 'Techniques de comptage : arrangements, combinaisons et principes fondamentaux.',
+  slug: 'nombres-complexes',
+  title: 'الأعداد العقدية',
+  titleFr: 'Les nombres complexes',
+  description: 'Introduction aux nombres complexes, formes algébrique et trigonométrique.',
   level: '2bac',
   levelLabel: 'ثانية باك',
-  youtubeId: 'WUvTyaaNkzM',
-  pdfPath: 'https://www.maths-et-tiques.fr/telech/Denombrement.pdf',
-  topics: ['التبديلات', 'التوافيق', 'مبادئ العد']
+  youtubeId: '4k6Xq7e7N3U',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Complexes.pdf',
+  topics: ['forme algébrique', 'forme trigonométrique', 'représentation géométrique']
 },
 {
   id: 16,
-  slug: 'probabilites',
-  title: 'الاحتمالات',
-  titleFr: 'Probabilités',
-  description: 'Calcul des probabilités, événements aléatoires et lois de probabilité.',
+  slug: 'calcul-integrale',
+  title: 'حساب التكامل',
+  titleFr: 'Calcul d’intégrale',
+  description: 'Calcul des intégrales et applications au calcul des aires.',
   level: '2bac',
   levelLabel: 'ثانية باك',
-  youtubeId: 'xXeS3QdQ8s0',
-  pdfPath: 'https://www.maths-et-tiques.fr/telech/Probabilites.pdf',
-  topics: ['الأحداث', 'الاحتمال', 'القوانين']
+  youtubeId: '3p1k8Xx7J9U',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Integration.pdf',
+  topics: ['intégrale', 'aires', 'intégration par parties']
 },
 {
   id: 17,
   slug: 'geometrie-espace',
   title: 'الهندسة في الفضاء',
   titleFr: 'Géométrie dans l’espace',
-  description: 'Étude des droites, plans et solides dans l’espace avec des applications géométriques.',
+  description: 'Étude des droites et des plans dans l’espace et des positions relatives.',
   level: '2bac',
   levelLabel: 'ثانية باك',
   youtubeId: 'tXlXG9pYwK8',
   pdfPath: 'https://www.maths-et-tiques.fr/telech/Espace.pdf',
-  topics: ['المستقيمات', 'المستويات', 'المجسمات']
+  topics: ['droites', 'plans', 'positions relatives']
+},
+{
+  id: 18,
+  slug: 'probabilites',
+  title: 'الاحتمالات',
+  titleFr: 'Probabilités',
+  description: 'Calcul des probabilités et étude des variables aléatoires.',
+  level: '2bac',
+  levelLabel: 'ثانية باك',
+  youtubeId: 'xXeS3QdQ8s0',
+  pdfPath: 'https://www.maths-et-tiques.fr/telech/Probabilites.pdf',
+  topics: ['événements', 'probabilité', 'lois de probabilité']
 }
 ];
 
