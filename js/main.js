@@ -402,7 +402,7 @@ function renderLessonCards(lessons, container) {
         <div class="lesson-number">${String(index + 1).padStart(2, '0')}</div>
         <span class="lesson-badge badge-${lesson.level}">${lesson.levelLabel}</span>
       </div>
-      <h3>${lesson.title}</h3>
+      <h3>${lesson.titleFr}</h3>
       <p>${lesson.description}</p>
       <div class="lesson-card-footer">
         <a href="lesson.html?slug=${lesson.slug}" class="btn btn-primary btn-sm">
