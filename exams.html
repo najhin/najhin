@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examens Nationaux - Najhin</title>
+  <meta name="description" content="Annales des examens nationaux de mathématiques 2ème BAC avec corrections intégrées." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-exams">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <span>Najhin</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="tronc.html" data-i18n="nav.tronc">Tronc commun</a>
+        <a href="1bac.html" data-i18n="nav.1bac">1ère Bac</a>
+        <a href="2bac.html" data-i18n="nav.2bac">2ème Bac</a>
+        <a href="exams.html" class="active" data-i18n="nav.exams">Examens</a>
+        <a href="premium.html" class="premium-nav" data-i18n="nav.premium">Offre Premium</a>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+        <button class="btn-theme-toggle">
+          <i class="fas fa-moon theme-icon"></i>
+        </button>
+        <button class="btn-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="tronc.html" data-i18n="nav.tronc">Tronc commun</a>
+      <a href="1bac.html" data-i18n="nav.1bac">1ère Bac</a>
+      <a href="2bac.html" data-i18n="nav.2bac">2ème Bac</a>
+      <a href="exams.html" class="active" data-i18n="nav.exams">Examens</a>
+      <a href="premium.html" data-i18n="nav.premium">Offre Premium</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header" style="background: linear-gradient(135deg, #1e3a8a, #3b82f6);">
+    <h1><i class="fas fa-file-alt"></i> <span data-i18n="exams.title">Examens Nationaux</span></h1>
+    <p><span data-i18n="exams.subtitle">Mathématiques - 2ème Baccalauréat Sciences Mathématiques</span></p>
+  </div>
+
+  <!-- FILTERS -->
+  <section class="section">
+    <div class="container">
+      <div class="filters-bar">
+        <select id="year-filter" class="filter-select">
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+        </select>
+        <select id="type-filter" class="filter-select">
+          <option value="normale" data-i18n="exams.normale">Session Normale</option>
+          <option value="rattrapage" data-i18n="exams.rattrapage">Session Rattrapage</option>
+        </select>
+        <button id="load-exam" class="btn btn-primary">
+          <i class="fas fa-search"></i> <span data-i18n="exams.load">Charger l'examen</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAM DISPLAY -->
+  <section class="section section-alt">
+    <div class="container">
+      <div id="exam-container">
+        <div class="exam-placeholder">
+          <i class="fas fa-folder-open"></i>
+          <h3 data-i18n="exams.placeholder.title">Sélectionnez une année et une session</h3>
+          <p data-i18n="exams.placeholder.desc">Choisissez l'examen que vous souhaitez consulter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+          <span>Najhin</span>
+        </a>
+        <p data-i18n="footer.description">Plateforme éducative gratuite pour les étudiants marocains.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.levels">Niveaux</h4>
+        <ul>
+          <li><a href="tronc.html" data-i18n="nav.tronc">Tronc commun</a></li>
+          <li><a href="1bac.html" data-i18n="nav.1bac">1ère Bac</a></li>
+          <li><a href="2bac.html" data-i18n="nav.2bac">2ème Bac</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.resources">Ressources</h4>
+        <ul>
+          <li><a href="exams.html" data-i18n="nav.exams">Examens</a></li>
+          <li><a href="premium.html" data-i18n="nav.premium">Offre Premium</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Najhin — <span data-i18n="footer.rights">Tous droits réservés</span></p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="js/translations.js"></script>
+  <script src="js/exams-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
