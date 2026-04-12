@@ -108,7 +108,36 @@ const translations = {
     'courses.limitesContinuite': 'Limites et continuité',
     'courses.primitives': 'Primitives',
     'courses.exponential': 'Fonction exponentielle',
-    'courses.integrale': 'Calcul d\'intégrale'
+    'courses.integrale': 'Calcul d\'intégrale',
+
+
+
+
+
+// Add to 'fr' section
+'nav.exams': 'Examens',
+'exams.breadcrumb': 'Examens Nationaux',
+'exams.title': 'Examens Nationaux de Mathématiques',
+'exams.subtitle': 'Annales 2ème Baccalauréat - Sujets normaux et rattrapage avec corrections',
+'exams.filter.year': 'Année',
+'exams.filter.type': 'Type',
+'exams.filter.lesson': 'Leçon',
+'exams.reset': 'Réinitialiser',
+
+
+
+// Add to 'fr' section
+'nav.exams': 'Examens',
+'exams.title': 'Examens Nationaux',
+'exams.subtitle': 'Mathématiques - 2ème Baccalauréat Sciences Mathématiques',
+'exams.normale': 'Session Normale',
+'exams.rattrapage': 'Session Rattrapage',
+'exams.load': 'Charger l\'examen',
+'exams.placeholder.title': 'Sélectionnez une année et une session',
+'exams.placeholder.desc': 'Choisissez l\'examen que vous souhaitez consulter',
+
+
+
   },
   
   ar: {
@@ -217,7 +246,28 @@ const translations = {
     'courses.limitesContinuite': 'النهايات والاستمرارية',
     'courses.primitives': 'البدائيات',
     'courses.exponential': 'الدالة الأسية',
-    'courses.integrale': 'حساب التكامل'
+    'courses.integrale': 'حساب التكامل',
+// Add to 'ar' section
+'nav.exams': 'الامتحانات الوطنية',
+'exams.breadcrumb': 'الامتحانات الوطنية',
+'exams.title': 'الامتحانات الوطنية في الرياضيات',
+'exams.subtitle': 'نماذج الامتحانات الوطنية للسنة الثانية باكالوريا - الدورات العادية والاستدراكية مع التصحيح',
+'exams.filter.year': 'السنة',
+'exams.filter.type': 'الدورة',
+'exams.filter.lesson': 'الدرس',
+'exams.reset': 'إعادة تعيين',
+
+
+
+// Add to 'ar' section
+'nav.exams': 'الامتحانات الوطنية',
+'exams.title': 'الامتحانات الوطنية',
+'exams.subtitle': 'الرياضيات - السنة الثانية باكالوريا علوم رياضية',
+'exams.normale': 'الدورة العادية',
+'exams.rattrapage': 'الدورة الاستدراكية',
+'exams.load': 'تحميل الامتحان',
+'exams.placeholder.title': 'اختر سنة ودورة',
+'exams.placeholder.desc': 'اختر الامتحان الذي تريد الاطلاع عليه',
   }
 };
 
