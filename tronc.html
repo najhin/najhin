@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>الجذع المشترك - Najhin نجحين</title>
-  <meta name="description" content="دروس الرياضيات لمستوى الجذع المشترك: المتراجحات، الدوال المرجعية، الهندسة المستوية والحساب العددي." />
+  <title data-i18n="page.tronc.title">الجذع المشترك - Najhin نجحين</title>
+  <meta name="description" data-i18n="page.tronc.meta" content="دروس الرياضيات لمستوى الجذع المشترك: المتراجحات، الدوال المرجعية، الهندسة المستوية والحساب العددي." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -21,31 +21,31 @@
         <span>Najhin نجحين</span>
       </a>
       <div class="nav-links">
-        <a href="index.html">الرئيسية</a>
-        <a href="tronc.html" class="active">جذع مشترك</a>
-        <a href="1bac.html">أولى باك</a>
-        <a href="2bac.html">ثانية باك</a>
-        <a href="premium.html" class="btn-premium-promo">
-  <i class="fas fa-crown"></i> احصل على الباقة المميزة
-</a>
+        <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+        <a href="tronc.html" class="active" data-i18n="nav.tronc">جذع مشترك</a>
+        <a href="1bac.html" data-i18n="nav.1bac">أولى باك</a>
+        <a href="2bac.html" data-i18n="nav.2bac">ثانية باك</a>
+        <a href="premium.html" class="premium-nav" data-i18n="nav.premium">احصل على الباقة المميزة</a>
       </div>
       <div class="nav-actions">
-        <button class="btn-theme-toggle" aria-label="تغيير الوضع">
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+        <button class="btn-theme-toggle" aria-label="Changer le thème">
           <i class="fas fa-moon theme-icon"></i>
         </button>
-        <button class="btn-menu" aria-label="القائمة">
+        <button class="btn-menu" aria-label="Menu">
           <i class="fas fa-bars"></i>
         </button>
       </div>
     </div>
     <div class="mobile-menu">
-      <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
-      <a href="tronc.html" class="active"><i class="fas fa-book"></i> جذع مشترك</a>
-      <a href="1bac.html"><i class="fas fa-book-open"></i> أولى باك</a>
-      <a href="2bac.html"><i class="fas fa-star"></i> ثانية باك</a>
-      <a href="premium.html" class="btn-premium-promo">
-  <i class="fas fa-crown"></i> احصل على الباقة المميزة
-</a>
+      <a href="index.html" data-i18n="nav.home"><i class="fas fa-home"></i> الرئيسية</a>
+      <a href="tronc.html" class="active" data-i18n="nav.tronc"><i class="fas fa-book"></i> جذع مشترك</a>
+      <a href="1bac.html" data-i18n="nav.1bac"><i class="fas fa-book-open"></i> أولى باك</a>
+      <a href="2bac.html" data-i18n="nav.2bac"><i class="fas fa-star"></i> ثانية باك</a>
+      <a href="premium.html" class="premium-nav" data-i18n="nav.premium"><i class="fas fa-crown"></i> احصل على الباقة المميزة</a>
     </div>
   </nav>
 
@@ -54,10 +54,10 @@
     <div class="breadcrumb">
       <a href="index.html"><i class="fas fa-home"></i></a>
       <span class="separator"><i class="fas fa-chevron-left"></i></span>
-      <span>الجذع المشترك</span>
+      <span data-i18n="page.tronc.breadcrumb">الجذع المشترك</span>
     </div>
-    <h1><i class="fas fa-seedling" style="margin-left:0.75rem;opacity:0.85"></i>الجذع المشترك</h1>
-    <p>دروس الرياضيات الأساسية — بناء القاعدة الصلبة للمرحلة التالية</p>
+    <h1 data-i18n="page.tronc.title"><i class="fas fa-seedling" style="margin-left:0.75rem;opacity:0.85"></i>الجذع المشترك</h1>
+    <p data-i18n="page.tronc.subtitle">دروس الرياضيات الأساسية — بناء القاعدة الصلبة للمرحلة التالية</p>
   </div>
 
   <!-- LESSONS SECTION -->
@@ -66,13 +66,12 @@
       <div class="section-header">
         <div class="section-label">
           <i class="fas fa-book-open" style="margin-left:0.35rem"></i>
-          دروس الجذع المشترك
+          <span data-i18n="page.tronc.sectionLabel">دروس الجذع المشترك</span>
         </div>
-        <h2>جميع الدروس المتاحة</h2>
-        <p>4 دروس أساسية مغطاة بشرح مفصل وملف PDF لكل درس</p>
+        <h2 data-i18n="page.tronc.sectionTitle">جميع الدروس المتاحة</h2>
+        <p data-i18n="page.tronc.sectionDesc">4 دروس أساسية مغطاة بشرح مفصل وملف PDF لكل درس</p>
       </div>
 
-      <!-- Lessons Grid (populated by JS) -->
       <div class="lessons-grid" id="lessons-grid">
         <div class="spinner"></div>
       </div>
@@ -82,13 +81,13 @@
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
-      <h2>هل أتممت الجذع المشترك؟</h2>
-      <p>انتقل إلى مستوى أولى باكالوريا وتابع رحلتك</p>
+      <h2 data-i18n="cta.tronc.title">هل أتممت الجذع المشترك؟</h2>
+      <p data-i18n="cta.tronc.subtitle">انتقل إلى مستوى أولى باكالوريا وتابع رحلتك</p>
       <div class="cta-group">
-        <a href="1bac.html" class="btn btn-primary btn-lg">
+        <a href="1bac.html" class="btn btn-primary btn-lg" data-i18n="cta.tronc.button1">
           <i class="fas fa-arrow-left"></i> أولى باكالوريا
         </a>
-        <a href="index.html" class="btn btn-outline btn-lg">
+        <a href="index.html" class="btn btn-outline btn-lg" data-i18n="cta.tronc.button2">
           <i class="fas fa-home"></i> الرئيسية
         </a>
       </div>
@@ -101,38 +100,38 @@
       <div class="footer-brand">
         <a href="index.html" class="nav-logo">
           <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
-          <span>Najhin نجحين</span>
+          <span>Najhin</span>
         </a>
-        <p style="margin-top:1rem">منصة تعليمية مجانية مخصصة للطلاب المغاربة لتعلم الرياضيات.</p>
+        <p style="margin-top:1rem" data-i18n="footer.description">منصة تعليمية مجانية مخصصة للطلاب المغاربة لتعلم الرياضيات.</p>
       </div>
       <div class="footer-col">
-        <h4>المستويات</h4>
+        <h4 data-i18n="footer.levels">المستويات</h4>
         <ul>
-          <li><a href="tronc.html">الجذع المشترك</a></li>
-          <li><a href="1bac.html">أولى باكالوريا</a></li>
-          <li><a href="2bac.html">ثانية باكالوريا</a></li>
+          <li><a href="tronc.html" data-i18n="footer.tronc">الجذع المشترك</a></li>
+          <li><a href="1bac.html" data-i18n="footer.1bac">أولى باكالوريا</a></li>
+          <li><a href="2bac.html" data-i18n="footer.2bac">ثانية باكالوريا</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>الدروس</h4>
+        <h4 data-i18n="footer.courses">الدروس</h4>
         <ul>
-          <li><a href="lesson.html?slug=inequations">المتراجحات</a></li>
-          <li><a href="lesson.html?slug=functions">الدوال المرجعية</a></li>
-          <li><a href="lesson.html?slug=geometry">الهندسة المستوية</a></li>
-          <li><a href="lesson.html?slug=arithmetic">الحساب العددي</a></li>
+          <li><a href="lesson.html?slug=inequations" data-i18n="courses.inequations">المتراجحات</a></li>
+          <li><a href="lesson.html?slug=functions" data-i18n="courses.functions">الدوال المرجعية</a></li>
+          <li><a href="lesson.html?slug=geometry" data-i18n="courses.geometry">الهندسة المستوية</a></li>
+          <li><a href="lesson.html?slug=arithmetic" data-i18n="courses.arithmetic">الحساب العددي</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>روابط</h4>
+        <h4 data-i18n="footer.links">روابط</h4>
         <ul>
-          <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="1bac.html">أولى باك</a></li>
-          <li><a href="2bac.html">ثانية باك</a></li>
+          <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="1bac.html" data-i18n="nav.1bac">أولى باك</a></li>
+          <li><a href="2bac.html" data-i18n="nav.2bac">ثانية باك</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom" style="max-width:1200px;margin:0 auto">
-      <p>© 2024 Najhin نجحين — جميع الحقوق محفوظة</p>
+      <p>© 2024 Najhin نجحين — <span data-i18n="footer.rights">جميع الحقوق محفوظة</span></p>
       <div class="footer-social">
         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
@@ -145,6 +144,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

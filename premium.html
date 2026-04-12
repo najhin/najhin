@@ -575,37 +575,47 @@
 </head>
 <body class="premium-page">
 
+
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
         <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
-        <span>Najhin نجحين</span>
+        <span>Najhin</span>
       </a>
       <div class="nav-links">
-        <a href="index.html">الرئيسية</a>
-        <a href="tronc.html">جذع مشترك</a>
-        <a href="1bac.html">أولى باك</a>
-        <a href="2bac.html">ثانية باك</a>
-        <a href="premium.html" class="active" style="color: #f59e0b;">الباقة المميزة</a>
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="tronc.html" data-i18n="nav.tronc">Tronc commun</a>
+        <a href="1bac.html" data-i18n="nav.1bac">1ère Bac</a>
+        <a href="2bac.html" class="active" data-i18n="nav.2bac">2ème Bac</a>
+        <a href="premium.html" class="premium-nav" data-i18n="nav.premium">Offre Premium</a>
       </div>
+
       <div class="nav-actions">
-        <button class="btn-theme-toggle" aria-label="تغيير الوضع">
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+        <button class="btn-theme-toggle" aria-label="Changer le thème">
           <i class="fas fa-moon theme-icon"></i>
         </button>
-        <button class="btn-menu" aria-label="القائمة">
+        <button class="btn-menu" aria-label="Menu">
           <i class="fas fa-bars"></i>
         </button>
       </div>
     </div>
+
     <div class="mobile-menu">
-      <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
-      <a href="tronc.html"><i class="fas fa-book"></i> جذع مشترك</a>
-      <a href="1bac.html"><i class="fas fa-book-open"></i> أولى باك</a>
-      <a href="2bac.html"><i class="fas fa-star"></i> ثانية باك</a>
-      <a href="premium.html" class="active"><i class="fas fa-crown"></i> الباقة المميزة</a>
+      <a href="index.html" data-i18n="nav.home"><i class="fas fa-home"></i> Accueil</a>
+      <a href="tronc.html" data-i18n="nav.tronc"><i class="fas fa-book"></i> Tronc commun</a>
+      <a href="1bac.html" data-i18n="nav.1bac"><i class="fas fa-book-open"></i> 1ère Bac</a>
+      <a href="2bac.html" class="active" data-i18n="nav.2bac"><i class="fas fa-star"></i> 2ème Bac</a>
+      <a href="premium.html" class="premium-nav" data-i18n="nav.premium"><i class="fas fa-crown"></i> Offre Premium</a>
     </div>
   </nav>
+
+
+
 
   <!-- PREMIUM HERO -->
   <div class="premium-hero">
@@ -1210,6 +1220,8 @@
         closeSubscriptionModal();
       }
     };
+  
   </script>
+<script src="js/translations.js"></script>
 </body>
 </html>

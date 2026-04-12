@@ -1,23 +1,21 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Najhin - Cours Maths Maroc (TC, 1BAC, 2BAC) | Najhin</title>
-
-  <meta name="description" content="Cours de mathématiques au Maroc pour TC, 1BAC et 2BAC avec vidéos, PDF et exercices corrigés. Plateforme Najhin pour apprendre les maths facilement." />
-  <meta name="keywords" content="math maroc, 2bac maroc, cours math 1bac, tc maroc, exercices math maroc, najhin, Najhin mathématiques" />
-  <meta name="robots" content="index, follow" />
+  <title>Najhin | Cours de Maths Maroc - TC, 1BAC, 2BAC</title>
+  <meta name="description" content="Plateforme éducative gratuite de mathématiques pour les étudiants marocains. Cours complets, exercices corrigés et vidéos pour TC, 1BAC et 2BAC." />
+  <meta name="keywords" content="math maroc, cours maths 1bac, 2bac maroc, tc maroc, exercices maths, najhin" />
   <meta name="author" content="Najhin" />
-
-  <!-- Fonts -->
+  <meta name="robots" content="index, follow" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body class="page-home">
 
@@ -30,16 +28,18 @@
       </a>
 
       <div class="nav-links">
-        <a href="index.html" class="active">Accueil</a>
-        <a href="tronc.html">Tronc commun</a>
-        <a href="1bac.html">1ère Bac</a>
-        <a href="2bac.html">2ème Bac</a>
-        <a href="premium.html" style="color: #f59e0b;">
-          <i class="fas fa-crown"></i> Offre Premium
-        </a>
+        <a href="index.html" class="active" data-i18n="nav.home">Accueil</a>
+        <a href="tronc.html" data-i18n="nav.tronc">Tronc commun</a>
+        <a href="1bac.html" data-i18n="nav.1bac">1ère Bac</a>
+        <a href="2bac.html" data-i18n="nav.2bac">2ème Bac</a>
+        <a href="premium.html" class="premium-nav" data-i18n="nav.premium">Offre Premium</a>
       </div>
 
       <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
         <button class="btn-theme-toggle" aria-label="Changer le thème">
           <i class="fas fa-moon theme-icon"></i>
         </button>
@@ -51,11 +51,11 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu">
-      <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
-      <a href="tronc.html"><i class="fas fa-book"></i> Tronc commun</a>
-      <a href="1bac.html"><i class="fas fa-book-open"></i> 1ère Bac</a>
-      <a href="2bac.html"><i class="fas fa-star"></i> 2ème Bac</a>
-      <a href="premium.html"><i class="fas fa-crown"></i> Offre Premium</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="tronc.html" data-i18n="nav.tronc">Tronc commun</a>
+      <a href="1bac.html" data-i18n="nav.1bac">1ère Bac</a>
+      <a href="2bac.html" data-i18n="nav.2bac">2ème Bac</a>
+      <a href="premium.html" data-i18n="nav.premium">Offre Premium</a>
     </div>
   </nav>
 
@@ -63,14 +63,14 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-badge">
-        <i class="fas fa-star" style="margin-left:0.4rem"></i>
-        Plateforme éducative gratuite 100%
+        <i class="fas fa-star"></i>
+        <span data-i18n="hero.badge">Plateforme éducative gratuite 100%</span>
       </div>
       <h1>
         <span>Najhin</span><br />
-        Apprenez les mathématiques facilement
+        <span data-i18n="hero.title">Apprenez les mathématiques facilement</span>
       </h1>
-      <p class="hero-subtitle">
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
         Cours complets de mathématiques pour les étudiants marocains — Tronc Commun, 1ère Bac, 2ème Bac.
         Vidéos éducatives et PDF gratuits.
       </p>
@@ -81,8 +81,9 @@
           <input
             type="text"
             class="search-input"
-            placeholder="Rechercher un cours... (ex: Dérivation, Limites)"
+            placeholder="Rechercher un cours..."
             aria-label="Recherche dans les cours"
+            data-i18n-placeholder="search.placeholder"
           />
           <button class="search-btn" aria-label="Rechercher">
             <i class="fas fa-search"></i>
@@ -92,10 +93,10 @@
       </div>
 
       <div class="hero-cta-group">
-        <a href="tronc.html" class="btn btn-primary btn-lg">
+        <a href="tronc.html" class="btn btn-primary btn-lg" data-i18n="hero.cta1">
           <i class="fas fa-play"></i> Commencer à apprendre
         </a>
-        <a href="#levels" class="btn btn-outline btn-lg">
+        <a href="#levels" class="btn btn-outline btn-lg" data-i18n="hero.cta2">
           <i class="fas fa-layer-group"></i> Explorer les niveaux
         </a>
       </div>
@@ -108,18 +109,18 @@
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
-          <div class="stat-number" data-count="3" data-suffix="">3</div>
-          <div class="stat-label">Niveaux scolaires</div>
+          <div class="stat-number" data-count="3">3</div>
+          <div class="stat-label" data-i18n="stats.levels">Niveaux scolaires</div>
         </div>
         <div class="stat-card">
           <div class="stat-icon"><i class="fas fa-book-open"></i></div>
-          <div class="stat-number" data-count="24" data-suffix="+">24+</div>
-          <div class="stat-label">Cours disponibles</div>
+          <div class="stat-number" data-count="24">24+</div>
+          <div class="stat-label" data-i18n="stats.courses">Cours disponibles</div>
         </div>
         <div class="stat-card">
           <div class="stat-icon"><i class="fas fa-heart"></i></div>
-          <div class="stat-number" data-count="100" data-suffix="%">100%</div>
-          <div class="stat-label">Entièrement gratuit</div>
+          <div class="stat-number" data-count="100">100%</div>
+          <div class="stat-label" data-i18n="stats.free">Entièrement gratuit</div>
         </div>
       </div>
     </div>
@@ -129,9 +130,9 @@
   <section class="section section-alt" id="levels">
     <div class="container">
       <div class="section-header">
-        <div class="section-label"><i class="fas fa-layer-group" style="margin-left:0.35rem"></i>Niveaux scolaires</div>
-        <h2>Choisissez votre niveau</h2>
-        <p>Cours organisés et détaillés pour chaque niveau avec un style clair et simple</p>
+        <div class="section-label"><i class="fas fa-layer-group"></i><span data-i18n="levels.label">Niveaux scolaires</span></div>
+        <h2 data-i18n="levels.title">Choisissez votre niveau</h2>
+        <p data-i18n="levels.subtitle">Cours organisés et détaillés pour chaque niveau avec un style clair et simple</p>
       </div>
 
       <div class="levels-grid">
@@ -140,14 +141,14 @@
           <div class="level-icon">
             <i class="fas fa-seedling"></i>
           </div>
-          <h3>Tronc Commun</h3>
-          <p>Fondamentaux des mathématiques : inégalités, fonctions, géométrie et calcul numérique</p>
+          <h3 data-i18n="levels.tronc.title">Tronc Commun</h3>
+          <p data-i18n="levels.tronc.desc">Fondamentaux des mathématiques : inégalités, fonctions, géométrie et calcul numérique</p>
           <div class="level-meta">
-            <span class="badge">4 cours</span>
-            <span class="badge">Niveau débutant</span>
+            <span class="badge" data-i18n="levels.tronc.courses">4 cours</span>
+            <span class="badge" data-i18n="levels.tronc.level">Niveau débutant</span>
           </div>
           <span class="btn btn-outline-primary btn-sm" style="--primary:#10b981">
-            <i class="fas fa-arrow-left"></i> Voir les cours
+            <i class="fas fa-arrow-right"></i> <span data-i18n="levels.view">Voir les cours</span>
           </span>
         </a>
 
@@ -156,14 +157,14 @@
           <div class="level-icon">
             <i class="fas fa-chart-line"></i>
           </div>
-          <h3>1ère Bac</h3>
-          <p>Dérivation, Limites, Suites et Probabilités expliqués en détail</p>
+          <h3 data-i18n="levels.1bac.title">1ère Bac</h3>
+          <p data-i18n="levels.1bac.desc">Dérivation, Limites, Suites et Probabilités expliqués en détail</p>
           <div class="level-meta">
-            <span class="badge">4 cours</span>
-            <span class="badge">Niveau intermédiaire</span>
+            <span class="badge" data-i18n="levels.1bac.courses">4 cours</span>
+            <span class="badge" data-i18n="levels.1bac.level">Niveau intermédiaire</span>
           </div>
           <span class="btn btn-outline-primary btn-sm">
-            <i class="fas fa-arrow-left"></i> Voir les cours
+            <i class="fas fa-arrow-right"></i> <span data-i18n="levels.view">Voir les cours</span>
           </span>
         </a>
 
@@ -172,14 +173,14 @@
           <div class="level-icon">
             <i class="fas fa-infinity"></i>
           </div>
-          <h3>2ème Bac</h3>
-          <p>Fonctions logarithmiques, exponentielles, nombres complexes et logique mathématique</p>
+          <h3 data-i18n="levels.2bac.title">2ème Bac</h3>
+          <p data-i18n="levels.2bac.desc">Fonctions logarithmiques, exponentielles, nombres complexes et logique mathématique</p>
           <div class="level-meta">
-            <span class="badge">4 cours</span>
-            <span class="badge">Niveau avancé</span>
+            <span class="badge" data-i18n="levels.2bac.courses">4 cours</span>
+            <span class="badge" data-i18n="levels.2bac.level">Niveau avancé</span>
           </div>
           <span class="btn btn-outline-primary btn-sm" style="--primary:#7c3aed">
-            <i class="fas fa-arrow-left"></i> Voir les cours
+            <i class="fas fa-arrow-right"></i> <span data-i18n="levels.view">Voir les cours</span>
           </span>
         </a>
       </div>
@@ -190,9 +191,9 @@
   <section class="section" id="latest">
     <div class="container">
       <div class="section-header">
-        <div class="section-label"><i class="fas fa-fire" style="margin-left:0.35rem"></i>Derniers cours</div>
-        <h2>Cours disponibles</h2>
-        <p>Une sélection de cours pour commencer votre apprentissage</p>
+        <div class="section-label"><i class="fas fa-fire"></i><span data-i18n="latest.label">Derniers cours</span></div>
+        <h2 data-i18n="latest.title">Cours disponibles</h2>
+        <p data-i18n="latest.subtitle">Une sélection de cours pour commencer votre apprentissage</p>
       </div>
 
       <div class="lessons-grid" id="latest-lessons">
@@ -200,7 +201,7 @@
       </div>
 
       <div style="text-align:center;margin-top:2.5rem">
-        <a href="tronc.html" class="btn btn-primary btn-lg">
+        <a href="tronc.html" class="btn btn-primary btn-lg" data-i18n="latest.viewAll">
           <i class="fas fa-th-large"></i> Voir tous les cours
         </a>
       </div>
@@ -210,13 +211,13 @@
   <!-- ==================== CTA ==================== -->
   <section class="cta-section">
     <div class="container">
-      <h2>Commencez votre parcours vers le succès dès aujourd'hui</h2>
-      <p>Des milliers d’étudiants marocains font confiance à Najhin pour préparer leurs examens</p>
+      <h2 data-i18n="cta.title">Commencez votre parcours vers le succès dès aujourd'hui</h2>
+      <p data-i18n="cta.subtitle">Des milliers d'étudiants marocains font confiance à Najhin pour préparer leurs examens</p>
       <div class="cta-group">
-        <a href="tronc.html" class="btn btn-primary btn-lg">
+        <a href="tronc.html" class="btn btn-primary btn-lg" data-i18n="cta.button1">
           <i class="fas fa-play-circle"></i> Commencez maintenant gratuitement
         </a>
-        <a href="2bac.html" class="btn btn-outline btn-lg">
+        <a href="2bac.html" class="btn btn-outline btn-lg" data-i18n="cta.button2">
           <i class="fas fa-star"></i> 2ème Bac
         </a>
       </div>
@@ -231,18 +232,18 @@
           <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
           <span>Najhin</span>
         </a>
-        <p style="margin-top:1rem">Plateforme éducative gratuite pour les étudiants marocains pour apprendre les mathématiques facilement et efficacement.</p>
+        <p data-i18n="footer.description">Plateforme éducative gratuite pour les étudiants marocains pour apprendre les mathématiques facilement et efficacement.</p>
       </div>
       <div class="footer-col">
-        <h4>Niveaux</h4>
+        <h4 data-i18n="footer.levels">Niveaux</h4>
         <ul>
-          <li><a href="tronc.html">Tronc commun</a></li>
-          <li><a href="1bac.html">1ère Bac</a></li>
-          <li><a href="2bac.html">2ème Bac</a></li>
+          <li><a href="tronc.html" data-i18n="footer.tronc">Tronc commun</a></li>
+          <li><a href="1bac.html" data-i18n="footer.1bac">1ère Bac</a></li>
+          <li><a href="2bac.html" data-i18n="footer.2bac">2ème Bac</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Cours</h4>
+        <h4 data-i18n="footer.courses">Cours</h4>
         <ul>
           <li><a href="lesson.html?slug=derivation">Dérivation</a></li>
           <li><a href="lesson.html?slug=limits">Limites</a></li>
@@ -251,16 +252,16 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Liens</h4>
+        <h4 data-i18n="footer.links">Liens</h4>
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="#levels">Niveaux</a></li>
-          <li><a href="#latest">Derniers cours</a></li>
+          <li><a href="index.html" data-i18n="footer.home">Accueil</a></li>
+          <li><a href="#levels" data-i18n="footer.levelsLink">Niveaux</a></li>
+          <li><a href="#latest" data-i18n="footer.latestLink">Derniers cours</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom" style="max-width:1200px;margin:0 auto">
-      <p>© 2024 Najhin — Tous droits réservés</p>
+    <div class="footer-bottom">
+      <p>© 2024 Najhin — <span data-i18n="footer.rights">Tous droits réservés</span></p>
       <div class="footer-social">
         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
@@ -274,6 +275,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -1659,4 +1659,184 @@ input, textarea, select {
   cursor: pointer;
 }
 
+/* css/style.css - Add language switcher styles */
+/* Add this to your existing CSS */
 
+/* Language Switcher */
+.lang-switch {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--bg-section-alt);
+  border-radius: 50px;
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: var(--font);
+}
+
+.lang-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.lang-btn:hover:not(.active) {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] .hero-cta-group .btn i,
+[dir="rtl"] .level-card .btn i,
+[dir="rtl"] .lesson-card-footer .btn i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .level-card .btn i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .lesson-card-footer .btn i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .breadcrumb .separator i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .correction-header i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .correction-header.open i {
+  transform: rotate(90deg);
+}
+
+[dir="rtl"] .exercise-question .toggle-icon i {
+  transform: rotate(0);
+}
+
+[dir="rtl"] .exercise-question.open .toggle-icon i {
+  transform: rotate(180deg);
+}
+
+/* Adjust spacing for RTL */
+[dir="rtl"] .search-wrapper .search-input {
+  text-align: right;
+}
+
+[dir="rtl"] .section-label i,
+[dir="rtl"] .pdf-section h3 i,
+[dir="rtl"] .video-label i {
+  margin-left: 0.35rem;
+  margin-right: 0;
+}
+
+/* Premium nav link */
+.premium-nav {
+  color: #f59e0b !important;
+}
+
+.premium-nav:hover {
+  background: rgba(245, 158, 11, 0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .lang-switch {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  .nav-actions {
+    gap: 0.5rem;
+  }
+}
+
+/* Language Switcher */
+.lang-switch {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--bg-section-alt);
+  border-radius: 50px;
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: var(--font);
+}
+
+.lang-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.lang-btn:hover:not(.active) {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+}
+
+.premium-nav {
+  color: #f59e0b !important;
+}
+
+.premium-nav:hover {
+  background: rgba(245, 158, 11, 0.1) !important;
+}
+
+/* RTL Support */
+[dir="rtl"] .hero-cta-group .btn i,
+[dir="rtl"] .level-card .btn i,
+[dir="rtl"] .lesson-card-footer .btn i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .level-card .btn i,
+[dir="rtl"] .lesson-card-footer .btn i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .breadcrumb .separator i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .search-wrapper .search-input {
+  text-align: right;
+}
+
+[dir="rtl"] .section-label i,
+[dir="rtl"] .pdf-section h3 i,
+[dir="rtl"] .video-label i {
+  margin-left: 0.35rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .correction-header i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .correction-header.open i {
+  transform: rotate(90deg);
+}
