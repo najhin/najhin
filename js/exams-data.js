@@ -5,7 +5,7 @@ const EXAMS_DATA = {
     normale: {
       titleFr: "Examen National 2024 - Session Normale",
       titleAr: "الامتحان الوطني 2024 - الدورة العادية",
-      fullExamUrl: "https://drive.google.com/file/d/1XxXxXxXxX/view",
+      fullExamUrl: "https://drive.google.com/file/d/1JGUbxeefSU7wH0Yf9Dw9c9YS3vy1i-Zj/view?usp=sharing",
       exercises: [
         { 
           num: 1, 
