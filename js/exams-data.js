@@ -155,12 +155,12 @@ function openPDFModal(url, title) {
   if (url.includes('drive.google.com')) {
     const fileId = url.match(/[-\w]{25,}/)?.[0];
     if (fileId) {
-      directUrl = `https://drive.google.com/file/d/${fileId}/preview`;
+      directUrl = fileId;
     }
   }
   
   const encodedUrl = encodeURIComponent(directUrl);
-  const viewerUrl = `https://docs.google.com/viewer?url=${encodedUrl}&embedded=true`;
+  const viewerUrl = encodedUrl;
   const lang = getCurrentLangForExams();
   
   const existingModal = document.getElementById('pdf-modal-container');
